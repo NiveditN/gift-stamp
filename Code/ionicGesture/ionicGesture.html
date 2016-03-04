@@ -1,0 +1,67 @@
+<div class="item item-divider"> 
+  $ionicGesture
+</div>
+<div class="row">
+  <div class="col"><h2>Drag : {{data.drag}}</h2></div>
+</div>
+<div class="card">
+  <div class="row drag-canvas">
+    <div ng-style="draggedStyle">
+        <div detect-gestures gesture-type="drag" class="col swipe-box">
+          <p>
+            Drag Me
+          </p>
+        </div>
+    </div>
+  </div>
+</div>
+    
+<div class="row">
+  <div class="col"><h2>Swipe : {{data.swipe}}</h2></div>
+  <div class="col"><h2>Swipe Right : {{data.swiperight}}</h2></div>
+  <div class="col"><h2>Swipe Left : {{data.swipeleft}}</h2></div>
+  <div class="col"><h2>DoubleTap : {{data.doubletap}}</h2></div>
+  <div class="col"><h2>Tap : {{data.tap}}</h2></div>
+  <div class="col"><h2>Scroll : {{data.scroll}}</h2></div>
+</div>
+
+<div class="row drag-canvas">
+  <div detect-gestures gesture-type="swipe" class="col swipe-box">
+    <p>
+      Swipe Left Or Right Direction Inside Me!
+    </p>
+  </div>
+
+  <div detect-gestures gesture-type="swiperight" class="col swipe-box">
+    <p>
+      Swipe Right Inside Me!
+    </p>
+  </div>
+
+  <div detect-gestures gesture-type="swipeleft" class="col swipe-box">
+    <p>
+      Swipe Left Inside Me!
+    </p>
+  </div>
+
+  <div detect-gestures gesture-type="doubletap" class="col swipe-box">
+    <p>
+      Double Tap Me
+    </p>
+  </div>
+
+  <div detect-gestures gesture-type="tap" class="col swipe-box">
+    <p>
+      Tap Me
+    </p>
+  </div>
+  <div detect-gestures gesture-type="scroll" class="col swipe-box">
+    <ion-scroll direction="y">
+    <p>
+      Scroll Me
+    </p>
+
+    </ion-scroll>
+  </div> 
+</div> 
+
