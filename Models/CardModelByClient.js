@@ -17,6 +17,7 @@ var CardModel = {
 			}
 		},
 		texts: [{
+			id: 0,
 			content: '',
 			url: '',
 			style: {
@@ -33,6 +34,7 @@ var CardModel = {
 			}
 		}],
 		images: [{
+			id: 0,
 			url: '',
 			style: {
 				left: '',
@@ -43,6 +45,7 @@ var CardModel = {
 			}
 		}],
 		fields: [{							// rename variable to fields
+			id: 0,
 			name: '',
 			placeholder: '',
 			field: 'collection_name.fieldName',
@@ -61,7 +64,6 @@ var CardModel = {
 			}
 		}],
 		rules: [
-
 			{
 				name: 'stamp-gift', 		// array of all stamp objects with their positional properties
 				description: '',
@@ -79,12 +81,14 @@ var CardModel = {
 					}
 				},
 				gifts: [{
+					id: 0,
 					stampsRequired: 4,
 					name: '',
 					description: '',
 					image: '',
 					placeholderImage: '',
 				}, {
+					id: 0,
 					stampsRequired: 8,
 					name: '',
 					description: '',
@@ -128,7 +132,6 @@ var CardModel = {
 						logic: "giftsClaimed-=1"
 					},
 				],
-
 			}, 								//the start date and end date rules must exist on every card model
 			{
 				name: "start-date", 		// the start date rule defines the in effective date of the card after it's issued', it creates an visible area of the date, it adds a start date to the card.
@@ -173,7 +176,6 @@ var CardModel = {
 					editable: true
 				}] 								
 				//the date can be a fixed date in future or today, or after x number of days|weeks|months|years or 1980-1-1, if it set to 1980-1-1, it means the card will never expire. 
-
 			}
 		]
 	}
